@@ -1,0 +1,48 @@
+digraph {
+    iam:AddClientIDToOpenIDConnectProvider
+    iam -> Add -> ClientID -> To -> OpenIDConnectProvider
+
+    iam:AddRoleToInstanceProfile
+    Add -> Role -> To -> Instance -> Profile
+
+    iam:AddUserToGroup
+    Add -> User -> To -> Group
+
+    iam -> Attach
+
+    iam:AttachGroupPolicy
+    Attach -> Group -> Policy
+
+    iam:AttachRolePolicy
+    Attach -> Role -> Policy
+
+    iam:AttachUserPolicy
+    Attach -> User -> Policy
+
+    iam:ChangePassword
+    iam -> Change -> Password
+
+    iam -> Create
+    iam:CreateAccessKey
+    Create -> Access -> Key
+    iam:CreateAccountAlias
+    Create -> Account -> Alias
+    iam:CreateGroup
+    Create -> Group
+    iam:CreateInstanceProfile
+    Create -> InstanceProfile
+    iam:CreateLoginProfile
+    Create -> LoginProfile
+    iam:CreateOpenIDConnectProvider
+    Create -> OpenIDConnectProvider
+    iam:CreatePolicy
+    Create -> Policy
+    iam:CreatePolicyVersion
+    Create -> Policy -> Version
+    iam:CreateRole
+    Create -> Role
+    iam:CreateSAMLProvider
+    Create -> SAMLProvider
+    iam:CreateUser
+    Create -> User
+}

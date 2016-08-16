@@ -1,0 +1,35 @@
+digraph {
+
+    rule[shape=box,label="rule = iam:*Policy"]
+
+    iam -> Add
+    Add -> ClientID -> To -> OpenIDConnectProvider
+    Add -> Role -> To -> Instance -> Profile
+    Add -> User -> To -> Group
+
+    iam -> Attach[color=green]
+    Attach[color=green]
+    Group[color=green]
+    Policy[color=green]
+    Role[color=green]
+    User[color=green]
+    iam[color=green]
+    Attach -> Group -> Policy[color=green]
+    Attach -> Role -> Policy[color=green]
+    Attach -> User -> Policy[color=green]
+    
+    iam -> Change -> Password
+
+    iam -> Create
+    Create -> Access -> Key
+    Create -> Account -> Alias
+    Create -> Group
+    Create -> InstanceProfile
+    Create -> LoginProfile
+    Create -> OpenIDConnectProvider
+    Create -> Policy
+    Create -> Policy -> Version
+    Create -> Role
+    Create -> SAMLProvider
+    Create -> User
+}
